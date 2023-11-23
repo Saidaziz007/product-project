@@ -19,7 +19,10 @@
         <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <header>
+    <div id="backtop">
+        <a href="#"><i class="fa-regular fa-hand-point-up fa-fade"></i></a>
+    </div>
+    <header id="navbar">
         <nav class="container navigator">
             <div class="nav__logo">
                 <div class="nav__title">
@@ -28,18 +31,27 @@
                 </div>
                 <div>
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#">Product</a></li>
-                        <li class="nav__item"><a href="#">Customers</a></li>
-                        <li class="nav__item"><a href="#">Pricing</a></li>
-                        <li class="nav__item"><a href="#">Resources</a></li>
+                        <li class="nav__item"><a href="#product">Product</a></li>
+                        <li class="nav__item"><a href="#customers">Customers</a></li>
+                        <li class="nav__item"><a href="#pricing">Pricing</a></li>
+                        <li class="nav__item"><a href="#resources">Resources</a></li>
                     </ul>
                 </div>
+                <ul id="navbar-responsive">
+                    <i id="navbar-close" class="fa-solid fa-xmark fa-beat"></i>
+                    <li class="navbar__item"><a href="#product">Product</a></li>
+                    <li class="navbar__item"><a href="#customers">Customers</a></li>
+                    <li class="navbar__item"><a href="#pricing">Pricing</a></li>
+                    <li class="navbar__item"><a href="#resources">Resources</a></li>
+                    <button class="nav__btn">Sign In</button>
+                    <button class="nav__btn__1">Sign Up</button>
+                </ul>
                 <div class="nav__btns">
                     <button class="nav__btn">Sign In</button>
                     <button class="nav__btn__1">Sign Up</button>
                 </div>
                 <div id="mode-btn">
-                    <i class="fa-solid fa-circle-half-stroke fa-flip"></i>
+                    <img src="images/dark.svg" alt="logo">
                 </div>
                 <div id="navbar-open" class="hamburger">
                     <i class="fa-solid fa-bars fa-flip"></i>
@@ -49,7 +61,7 @@
     </header>
     <main>
         <section id="hero">
-            <div class="container">
+            <div class="container home">
                 <div class="hero__left">
                     <h1>Work at the speed
                     of thought</h1>
@@ -68,7 +80,7 @@
             </div>
         </section>
         <section id="product">
-            <div class="container">
+            <div class="container product">
                 <div class="product__top">
                     <h1>Product was Built Specifically
                     for You</h1>
@@ -240,13 +252,132 @@
                                 <h1>0</h1>
                                 <p>$<br><span>Per / month</span></p>
                             </div>
+                            <p>Only 2 Operators</p>
+                            <p>Notifications</p>
+                            <p>Landing Pages</p>
+                            <button>Order Now</button>
+                        </div>
+                        <div class="pricing__card">
+                            <h1>Standard</h1>
+                            <p>Brief price description</p>
+                            <div class="pricing__price">
+                                <h1>5</h1>
+                                <p>$<br><span>Per / month</span></p>
+                            </div>
+                            <p>5+ Operators</p>
+                            <p>Notifications</p>
+                            <p>Landing Pages</p>
+                            <button>Order Now</button>
+                        </div>
+                        <div class="pricing__card">
+                            <h1>Premium</h1>
+                            <p>Brief price description</p>
+                            <div class="pricing__price">
+                                <h1>10</h1>
+                                <p>$<br><span>Per / month</span></p>
+                            </div>
+                            <p>10+ Operators</p>
+                            <p>Notifications</p>
+                            <p>Landing Pages</p>
+                            <button>Order Now</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section id="feedback">
+            <div class="container">
+                <div class="feedback__top">
+                    <h1>What Clients Say</h1>
+                    <p>Problems trying to resolve the conflict between
+                    the two major realms of Classical physics: Newtonian mechanics</p>
+                </div>
+                <div class="feedback__bottom">
+                    <div class="feedback__row">
+                        <div class="feedback__card">
+                            <img src="images/star.svg" alt="img">
+                            <p>Product helps you see how many
+                            more days you need to work to
+                            reach your financial goal.</p>
+                            <div class="feedback__inside">
+                                <img src="images/feedback-1.svg" alt="img"><h3>Wahid Ari<br><span>Designer</span></h3>
+                            </div>
+                        </div>
+                        <div class="feedback__card">
+                            <img src="images/star.svg" alt="img">
+                            <p>Product helps you see how many
+                                more days you need to work to
+                                reach your financial goal.</p>
+                            <div class="feedback__inside">
+                                <img src="images/feedback-2.svg" alt="img">
+                                <h3>Wahid Ari<br><span>Designer</span></h3>
+                            </div>
+                        </div>
+                        <div class="feedback__card">
+                            <img src="images/star.svg" alt="img">
+                            <p>Product helps you see how many
+                                more days you need to work to
+                                reach your financial goal.</p>
+                            <div class="feedback__inside">
+                                <img src="images/feedback-3.svg" alt="img">
+                                <h3>Wahid Ari<br><span>Designer</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="resources">
+            <div class="container-1008 resources">
+                <div class="resources__left">
+                    <h1>Join 100 Compannies who boost their business with <br> Product</h1>
+                    <div>
+                        <button>Get This</button>
+                    </div>
+                </div>
+                <div class="resources__right">
+                    <img src="images/business.svg" alt="img">
+                </div>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="container footer">
+            <div class="footer__logo">
+                <div>
+                    <img src="images/logo.svg" alt="logo"><h1>Product</h1>
+                </div>
+                <div class="footer__media">
+                    <i class="fa-brands fa-instagram fa-beat"></i>
+                    <i class="fa-brands fa-facebook-f fa-beat"></i>
+                    <i class="fa-brands fa-twitter fa-beat"></i>
+                </div>
+            </div>
+            <div class="footer__center">
+                <ul class="footer__list">
+                    <li class="footer__item">Resource</li>
+                    <li class="footer__item-1">About Us</li>
+                    <li class="footer__item-1">Blog</li>
+                    <li class="footer__item-1">Contact</li>
+                    <li class="footer__item-1">FAQ</li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__item">Legal Stuff</li>
+                    <li class="footer__item-1">Disclaimer</li>
+                    <li class="footer__item-1">Financing</li>
+                    <li class="footer__item-1">Privacy Policy</li>
+                    <li class="footer__item-1">Terms of Service</li>
+                </ul>
+            </div>
+            <div class="footer__end">
+                <p>knowing you're always on the best energy deal.</p>
+                <form>
+                    <input type="text"> <br>
+                    <button>Sign up Now</button>
+                </form>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
         integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
