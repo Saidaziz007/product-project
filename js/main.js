@@ -78,3 +78,12 @@ function toggleBacktop() {
     backtop.classList.remove('backtop-show')
   }
 }
+
+
+const loading = document.getElementById("loading");
+
+const loadingDuration = 2000; // 2s
+
+setTimeout(() => {
+  loading.classList.add('loading-none');
+}, loadingDuration);
